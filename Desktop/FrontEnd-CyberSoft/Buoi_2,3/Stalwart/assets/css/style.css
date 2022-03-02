@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clean {
+  clear: both;
+}
+
+.container {
+  width: 1240px;
+  margin: auto;
+}
+
+/* Header */
+.header__logo {
+  width: fit-content;
+  float: left;
+  z-index: 2;
+  position: relative;
+  transform: translateY(15px);
+}
+
+.header__logo h1 {
+  color: #dc4312;
+  font-weight: 300;
+  font-size: 48px;
+  position: relative;
+}
+
+.header__logo h1::after {
+  content: "We help you in your sucess";
+  display: block;
+  width: max-content;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  padding-left: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.header__menu {
+  width: fit-content;
+  float: right;
+}
+
+.header__menu__item {
+  display: inline-block;
+  height: 100%;
+}
+
+.header__menu__item.active a {
+  color: #de4c1d;
+}
+
+.header__menu__item a {
+  display: inline-block;
+  color: #65d1ff;
+  font-size: 18px;
+  margin: 18px 0 0 20px;
+}
+
+/* Carousel */
+.carousel {
+  height: 500px;
+  background: url(../images/banner2.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.carousel__text {
+  text-align: -webkit-right;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+
+.carousel__text h2 {
+  width: fit-content;
+  font-size: 48px;
+  font-weight: 400;
+  background-color: #808080c4;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  margin-bottom: 12px;
+}
+
+.carousel__text p {
+  width: fit-content;
+  font-size: 14px;
+  letter-spacing: 7px;
+  margin-bottom: 8px;
+  background-color: #808080c4;
+}
+
+/* About */
+.about {
+  background-color: #29c0ff;
+  padding: 20px 0;
+}
+
+.about h3 {
+  width: fit-content;
+  font-size: 24px;
+  background-color: #72afc8;
+  margin-bottom: 16px;
+}
+
+.about p {
+  color: #fff;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+/* Welcome */
+.welcome,
+.work,
+.succeed {
+  padding: 30px 0;
+}
+
+.welcome > h3,
+.work > h3,
+.succeed > h3 {
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome > p {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.welcome__content img,
+.welcome__content__paragraph {
+  width: 50%;
+  float: left;
+}
+
+.welcome__content img,
+.welcome__content__paragraph.heightfull {
+  height: 350px;
+}
+
+.welcome__content__paragraph__icon,
+.welcome__content__paragraph__text {
+  display: inline-block;
+  width: fit-content;
+}
+
+.welcome__content__paragraph {
+  padding-top: 20px;
+}
+
+.welcome__content__paragraph i {
+  width: 5%;
+  float: left;
+  line-height: 38px;
+  color: #31c2ff;
+  text-align: center;
+}
+
+.welcome__content__paragraph__text {
+  width: 95%;
+  float: left;
+}
+
+.welcome__content__paragraph__text h5 {
+  color: #eb644d;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* Work */
+.work__item {
+  width: 33.33%;
+  padding: 5px;
+  float: left;
+}
+
+.work__item img {
+  width: 100%;
+}
+
+/* Succeed */
+.succeed__left,
+.succeed__right {
+  width: 50%;
+  float: left;
+}
+
+.succeed__left__services {
+  padding-bottom: 20px;
+  padding-right: 50px;
+}
+
+.succeed__left__services h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.succeed__left__services p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #9999a5;
+}
+
+.succeed__left__services p i {
+  color: #31c2ff;
+  margin-right: 5px;
+}
+
+.succeed__right {
+  padding: 50px 75px 0;
+  background: url(../images/index-serives.jpg);
+}
+
+.succeed__right__item {
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.succeed__right__item span {
+  color: #31c2ff;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #242424;
+  padding-top: 50px;
+}
+
+.footer__left,
+.footer__right {
+  width: 50%;
+  float: left;
+}
+
+.footer__left__menu {
+  width: 50%;
+  float: left;
+}
+
+.footer__left__menu h5,
+.footer__right__form h5,
+.footer__right__copywriter h5 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer__left__menu li {
+  margin-bottom: 20px;
+}
+
+.footer__left__menu a {
+  font-size: 18px;
+  color: grey;
+}
+
+.footer__right__form {
+  width: 50%;
+  float: left;
+}
+
+.footer__right__form p {
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.footer__right__form div input {
+  padding: 5px;
+  font-size: 18px;
+  width: 85%;
+  float: left;
+  border: none;
+  outline: none;
+}
+
+.footer__right__form div button {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #eb5424;
+  font-size: 18px;
+  width: 15%;
+  float: left;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__right__copywriter {
+  padding-top: 32px;
+  width: 50%;
+  float: left;
+  padding-left: 50px;
+}
+
+.footer__right__copywriter h5 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.footer__right__copywriter p {
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.footer__right__copywriter p span {
+  color: #eb5424;
+}

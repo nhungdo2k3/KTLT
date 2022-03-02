@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "Do you approve?",
+      "type": "textfield",
+      "id": "Field_07dn0oi",
+      "key": "approve",
+      "description": "Yes/No",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_01i6la9"
+}

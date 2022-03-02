@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn-1, .btn-2, .btn-3 {
+  border: none;
+  padding: 20px 40px;
+  background-color: orange;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn-2, .btn-3 {
+  background-color: pink;
+}
+
+.btn-3 {
+  color: red;
+}
+
+.demo {
+  color: yellow;
+  font-size: 32px;
+}
+
+.demo2 {
+  background-color: yellow;
+  font-size: 32px;
+}
+
+.heading {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 32px;
+}
+
+.heading .title {
+  font-size: 32px;
+  -webkit-animation: abc 2s linear infinite;
+          animation: abc 2s linear infinite;
+}
+
+.heading .title:hover {
+  color: red;
+}
+
+.heading p {
+  font-size: 32px;
+  color: green;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .left {
+  width: 30%;
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+  background-color: orange;
+}
+
+.container .right {
+  width: 70%;
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+  background-color: purple;
+}
+
+.container-button {
+  margin-top: 40px;
+}
+
+.if-else {
+  margin-top: 50px;
+  background-color: red;
+}
+
+.heading-1 {
+  font-size: 2rem;
+}
+
+.heading-2 {
+  font-size: 4rem;
+}
+
+.heading-3 {
+  font-size: 6rem;
+}
+
+.heading-4 {
+  font-size: 8rem;
+}
+
+.facebook {
+  background-image: url(../image/facebook.png);
+}
+
+.twitter {
+  background-image: url(../image/twitter.png);
+}
+
+.google {
+  background-image: url(../image/google.png);
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-3 {
+  width: 33.33333%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+@-webkit-keyframes abc {
+  to {
+    color: red;
+  }
+}
+
+@keyframes abc {
+  to {
+    color: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */

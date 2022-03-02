@@ -1,0 +1,11 @@
+.expense {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.message-error {
+    color: red;
+    font-size: 18px;
+    padding: 0 30px;
+}

@@ -1,0 +1,30 @@
+.container-form {
+    padding: 50px 30px;
+    margin: auto;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 5px;
+    outline: none;
+    font-size: 18px;
+}
+
+form :not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.form--button {
+    float: right;
+    font-weight: 700;
+    font-size: 14px;
+}

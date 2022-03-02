@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "Customer name",
+      "type": "textfield",
+      "id": "Field_1k50b0c",
+      "key": "customer_name",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Name of the property appraised",
+      "type": "textfield",
+      "id": "Field_1yre3ip",
+      "key": "name_of_property_appraised",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Valuation Time",
+      "type": "textfield",
+      "id": "Field_1jpjwtc",
+      "key": "valuation_time",
+      "validate": {
+        "required": true
+      },
+      "description": "dd/mm/yyyy"
+    },
+    {
+      "label": "Valuation purposes",
+      "type": "textfield",
+      "id": "Field_15nb1en",
+      "key": "valuation_purposes",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Appraisal results",
+      "type": "textfield",
+      "id": "Field_0ur5wd0",
+      "key": "appraisal_results",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0qgq8fv"
+}

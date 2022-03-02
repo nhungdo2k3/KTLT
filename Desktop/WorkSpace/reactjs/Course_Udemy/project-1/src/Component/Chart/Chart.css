@@ -1,0 +1,15 @@
+.expense-chart {
+    background-color: #f9deff;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.chart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.total-price {
+    padding: 10px;
+}

@@ -1,0 +1,115 @@
+@media (max-width: 1250px) {
+    nav {
+        flex-direction: column;
+        height: 125px;
+    }
+    .logo {
+        width: 200px;
+        margin: 15px 50px;
+    }
+    .icon-close {
+        display: block;
+    }
+    .nav__list {
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 300px;
+        background-color: #555;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        overflow-y: scroll;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: 0.25s linear;
+    }
+    .nav__item:last-child {
+        padding: 20px;
+        background-color: transparent;
+        margin: 0;
+    }
+    .nav__item__link {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+    .sub-nav__list {
+        padding-top: 10px;
+        position: relative;
+        transform: translateY(0);
+        display: block;
+        box-shadow: 0 0;
+        background-color: transparent;
+    }
+    .sub-nav__item__list li,
+    .sub-nav__item {
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 300;
+    }
+    .sub-nav__item a {
+        color: var(--white-color);
+        text-transform: uppercase;
+    }
+    .sub-nav__item:hover {
+        background-color: transparent;
+    }
+    .sub-nav__item__list {
+        padding-top: 10px;
+        display: block;
+        position: relative;
+        background-color: transparent;
+        transform: translateX(0);
+    }
+    .sub-nav__item__list li:hover {
+        background-color: transparent;
+    }
+    .icon-arrow-right::before,
+    .tag-hot::before,
+    .tag-new::before,
+    .tag-best::before {
+        display: none;
+    }
+    .icon-menu-tablet {
+        margin: 0px auto 10px;
+        font-size: 3.6rem;
+        display: block;
+    }
+    .destination__content__card__text {
+        width: 93%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .destination-special__introduce {
+        padding-right: 12px;
+    }
+    .packages__main__card__img {
+        height: auto;
+    }
+    .packages__main__card {
+        margin-bottom: 24px;
+    }
+    .destination-special__introduce {
+        margin-bottom: 40px;
+    }
+    .destination__content__card__text {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 740px) {}
+
+@media (max-width: 739px) {
+    .destination-special__others__item {
+        margin-bottom: 20px;
+    }
+    .destination-special {
+        margin-left: 20px;
+    }
+    .destination__content__card__text {
+        width: 99%;
+    }
+}

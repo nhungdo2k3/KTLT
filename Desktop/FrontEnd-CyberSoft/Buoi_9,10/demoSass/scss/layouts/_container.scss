@@ -1,0 +1,84 @@
+.demo {
+  color: $color-primary;
+  font-size: $font-size;
+}
+
+.demo2 {
+  background-color: $color-primary;
+  font-size: $font-size;
+}
+
+.heading {
+  font: {
+    weight: 900;
+    style: italic;
+    size: $font-size;
+  }
+  .title {
+    font-size: $font-size;
+    &:hover {
+      color: red;
+    }
+    animation: abc 2s linear infinite;
+  }
+  p {
+    font-size: 32px;
+    color: green;
+  }
+}
+
+.container {
+  display: flex;
+  .left {
+    @include content(orange, 30%);
+  }
+  .right {
+    @include content(purple, 70%);
+  }
+}
+
+.container-button {
+  margin-top: 40px;
+}
+
+$block-color: pink;
+.if-else {
+  margin-top: 50px;
+  @if ($block-color == green) {
+    background-color: green;
+  } @else if ($block-color == blue) {
+    background-color: blue;
+  } @else {
+    background-color: red;
+  }
+}
+
+@for $size from 1 through 4 {
+  .heading-#{$size} {
+    font-size: 2rem * $size;
+  }
+}
+
+$socials: facebook, twitter, google;
+@each $social in $socials {
+  .#{$social} {
+    background-image: url(../image/#{$social}.png);
+  }
+}
+
+// While
+$col: 4;
+
+@while $col > 0 {
+  .col-#{$col} {
+    width: 100% / $col;
+  }
+
+  $col: $col - 1;
+}
+
+@keyframes abc {
+  to {
+    color: red;
+  }
+}

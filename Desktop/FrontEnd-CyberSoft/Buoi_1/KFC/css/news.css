@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: grey;
+}
+
+.container {
+  width: 70%;
+  background-color: #fff;
+  margin: 10px;
+  font-size: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

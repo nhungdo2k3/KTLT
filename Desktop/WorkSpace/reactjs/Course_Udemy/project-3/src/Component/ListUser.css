@@ -1,0 +1,16 @@
+.user-list {
+    width: 40%;
+    margin: 50px auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.user-item {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.user-list :not(:last-child) {
+    margin-bottom: 20px;
+}

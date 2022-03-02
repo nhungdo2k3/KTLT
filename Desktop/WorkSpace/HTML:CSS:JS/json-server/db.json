@@ -1,0 +1,49 @@
+{
+  "player": [
+    {
+      "id": 1,
+      "name": "De Gea",
+      "position": "GK"
+    },
+    {
+      "name": "Lindelof",
+      "position": "CB",
+      "id": 2
+    },
+    {
+      "name": "Bailey",
+      "position": "CB",
+      "id": 3
+    },
+    {
+      "name": "Jones",
+      "position": "CB",
+      "id": 4
+    },
+    {
+      "name": "Maguire",
+      "position": "CB",
+      "id": 5
+    },
+    {
+      "name": "Pogba",
+      "position": "CM",
+      "id": 6
+    },
+    {
+      "name": "Cavani",
+      "position": "ST",
+      "id": 7
+    },
+    {
+      "name": "Mata",
+      "position": "CAM",
+      "id": 8
+    },
+    {
+      "name": "Martial",
+      "position": "ST",
+      "id": 9
+    }
+  ]
+}

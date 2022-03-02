@@ -1,0 +1,36 @@
+.footer {
+  background: $blue-color;
+  padding-bottom: 60px;
+  &__img-fluid {
+    margin-bottom: 60px;
+  }
+  &__container {
+    .footer__copywriter {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 0 25px;
+      }
+    }
+    .footer__menu {
+      &-list {
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+        padding: 0 25px;
+        .footer__menu-item {
+          padding: 7px 14px;
+          a {
+            color: #fff;
+            font-size: 1.5rem;
+            &:hover {
+              color: #e6e6e6;
+            }
+          }
+        }
+      }
+    }
+  }
+}

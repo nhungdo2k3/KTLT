@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container" style="margin-bottom: 500px">
+      <div id="title">Hello cybersoft</div>
+
+      <div>
+        <input class="form-control w-50" id="txtInput" value="123" />
+      </div>
+      <div>
+        <img id="img" src="./img/img1.jpeg" width="300" />
+      </div>
+      <div>
+        <button id="btnSubmit" onclick="handleClickButton()">submit</button>
+      </div>
+      <hr />
+      <h3>Bài tập 1: Thay đổi nội dung text</h3>
+      <h1>Học javascript tại Cybersoft</h1>
+      <p id="noiDung">Nội dung trước khi thay đổi!</p>
+
+      <button id="btnNhanEmDi">Nhấn em đi!</button>
+      <hr />
+      <h3>Thay đổi style của thẻ</h3>
+      <p id="pContent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rem
+        ducimus repudiandae corrupti soluta, eius quod sapiente beatae
+        perspiciatis, impedit nostrum odio similique ipsum harum quasi,
+        exercitationem nemo tenetur officia.
+      </p>
+      <button id="btnZoomIn" class="btn btn-outline-primary mr-2">+</button>
+
+      <button id="btnZoomOut" class="btn btn-outline-primary">-</button>
+
+      <hr />
+      <h2>Bài tập 2: Demo ứng dụng bật tắt đèn</h2>
+      <button id="btn-on" class="btn-success">Bật đèn</button>
+      <img id="imgBulb" src="./img/pic_bulboff.gif" alt="" />
+      <button id="btn-off">Tắt đèn</button>
+
+      <hr />
+      <h2>Bài tập 3: Demo thay đổi giao diện CSS</h2>
+      <h3 id="h3title">Hoc frond-end tai CyberSoft</h3>
+      <p id="pNoiDung">The nay se bi an di</p>
+      <button id="btnThayDoi">Thay doi noi dung</button>
+
+      <hr />
+      <h2>Bai tap 5: Xay dung chuc nang thong bao dang nhap</h2>
+      <h3>Dang nhap</h3>
+      <form id="form" action="">
+        <div>
+          <label for="userName">Tai Khooan: </label>
+          <input type="text" id="userName" />
+        </div>
+        <div>
+          <label for="password">Mat Khau: </label>
+          <input type="password" id="password" />
+        </div>
+        <button id="btnEnter">Submit</button>
+      </form>
+
+      <hr />
+      <section>1</section>
+      <section>2</section>
+      <section>3</section>
+
+      <hr />
+      <h2>Project: Tinh tien tip cho nhan vien</h2>
+      <div class="card text-left">
+        <div class="card-body">
+          <div class="form-group">
+            <label for="money">Tien Thanh Toan</label>
+            <input
+              type="number"
+              id="money"
+              class="form-control"
+              placeholder="Tong tien"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tip">Tien tip</label>
+            <select name="tip" id="tip">
+              <option value="0" selected>Chon de tip</option>
+              <option value="30">30% - Tuyet</option>
+              <option value="20">20% - Tot</option>
+              <option value="15">15% - Tam on</option>
+              <option value="10">10% - Toi</option>
+              <option value="5">5% - That te</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="people">Tip cho bao nhieu nhan vien</label>
+            <input
+              type="number"
+              id="people"
+              class="form-control"
+              placeholder="Nhap so nguoi"
+            />
+          </div>
+          <button id="btnTinhTien">Tinh Nao!</button>
+          <p id="text-result"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

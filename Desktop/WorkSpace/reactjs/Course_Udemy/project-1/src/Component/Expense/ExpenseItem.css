@@ -1,0 +1,25 @@
+.expenseItem {
+    background-color: #4a494a;
+    border-radius: 15px;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.product {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 20px;
+    margin-left: auto;
+    padding: 8px 20px;
+    background-color: #36014f;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-weight: 700;
+}

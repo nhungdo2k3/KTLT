@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="text-center">Quản lý thông tin sinh viên</h3>
+          <div class="form-group">
+            <p>Mã sinh viên</p>
+            <input class="form-control" id="maSinhVien" />
+            <p class="text-danger" id="error_maSinhVien"></p>
+          </div>
+          <div class="form-group">
+            <p>Tên sinh viên</p>
+            <input class="form-control" id="tenSinhVien" />
+            <p class="text-danger" id="error_tenSinhVien"></p>
+          </div>
+          <div class="form-group">
+            <p>Loại sinh viên</p>
+            <select class="form-control" id="loaiSinhVien">
+              <option>Khó khăn</option>
+              <option>Bình thường</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Email</p>
+            <input class="form-control" id="emailSinhVien" />
+            <p class="text-danger" id="error_emailSinhVien"></p>
+          </div>
+          <div class="form-group">
+            <p>Số điện thoại</p>
+            <input class="form-control" id="sdtSinhVien" />
+            <p class="text-danger" id="error_sdtSinhVien"></p>
+          </div>
+          <div class="row">
+            <div class="form-group col-4">
+              <p>Điểm toán</p>
+              <input class="form-control" id="diemToan" />
+              <p class="text-danger" id="error_diemToan"></p>
+            </div>
+            <div class="form-group col-4">
+              <p>Điểm lý</p>
+              <input class="form-control" id="diemLy" />
+              <p class="text-danger" id="error_diemLy"></p>
+            </div>
+            <div class="form-group col-4">
+              <p>Điểm hoá</p>
+              <input class="form-control" id="diemHoa" />
+              <p class="text-danger" id="error_diemHoa"></p>
+            </div>
+          </div>
+          <div class="form-group">
+            <p>Điểm rèn luyện</p>
+            <input id="diemRenLuyen" class="form-control" />
+            <p class="text-danger" id="error_diemRenLuyen"></p>
+          </div>
+          <div class="form-group text-center">
+            <button id="btnXacNhan" class="btn btn-success">Xác nhận</button>
+            <button id="btnCapNhat" class="btn btn-primary" disabled>
+              Cập nhật
+            </button>
+          </div>
+
+          <div class="form-group row mt-5">
+            <p class="col-12">Tìm kiếm tên sinh viên</p>
+            <input id="timKiemSinhVien" class="form-control col-11" />
+            <button id="btnTimKiem" class="btn btn-success col-1">
+              Tìm kiếm
+            </button>
+          </div>
+        </div>
+
+        <div class="col-6 d-none">
+          <h3 class="text-center mb-5">Thông tin sinh viên</h3>
+          <div class="alert alert-success">
+            <span>Tên sinh viên: </span>
+            <span id="txtTenSinhVien"></span>
+          </div>
+
+          <div class="alert alert-success">
+            <span>Mã sinh viên: </span>
+            <span id="txtMaSinhVien"></span>
+          </div>
+
+          <div class="alert alert-success">
+            <span>Loại sinh viên: </span>
+            <span id="txtLoaiSinhVien"></span>
+          </div>
+
+          <div class="alert alert-success">
+            <span>Điểm trung bình: </span>
+            <span id="txtDiemTrungBinh"></span>
+          </div>
+          <div class="alert alert-success">
+            <span>Xếp loại: </span>
+            <span id="txtXepLoai"></span>
+          </div>
+        </div>
+
+        <table class="table table-bordered mt-5">
+          <thead>
+            <tr>
+              <th>Mã sinh viên</th>
+              <th>Tên sinh viên</th>
+              <th>Loại sinh viên</th>
+              <th>Điểm trung bình</th>
+              <th>Điểm rèn luyện</th>
+            </tr>
+          </thead>
+          <tbody id="tbodySV"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Models -->
+    <script src="./models/Validation.js"></script>
+    <script src="./models/SinhVien.js"></script>
+    <!-- <script src="./index.js"></script> -->
+    <!-- <script src="./indexOOP.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"
+      integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./ajax.js"></script>
+  </body>
+</html>

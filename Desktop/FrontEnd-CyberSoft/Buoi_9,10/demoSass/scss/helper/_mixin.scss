@@ -1,0 +1,7 @@
+@mixin content($background, $width) {
+  width: $width;
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+  background-color: $background;
+}

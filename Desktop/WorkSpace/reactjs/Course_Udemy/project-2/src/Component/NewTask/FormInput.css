@@ -1,0 +1,56 @@
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    color: #333;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #bbbbbb;
+    outline: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+form input.inValid {
+    background-color: #eb9897;
+}
+
+@keyframes ring {
+    0% {
+      transform: translateY(0)
+    }
+    12.5% {
+      transform: translateY(3px)
+    }
+    25% {
+      transform: translateY(0)
+    }
+    37.5% {
+      transform: translateY(-3px)
+    }
+    50% {
+      transform: translateY(0)
+    }
+    62.5% {
+      transform: translateY(3px)
+    }
+    75% {
+      transform: translateY(0)
+    }
+    87.5% {
+      transform: translateY(-3px)
+    }
+    100% {
+      transform: translateY(0)
+    }
+}

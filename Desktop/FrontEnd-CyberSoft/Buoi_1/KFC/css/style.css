@@ -1,0 +1,60 @@
+.logo {
+  width: 100px;
+}
+
+.heading {
+  background-color: red;
+  color: #fff;
+  font-size: 40px;
+}
+
+a {
+  display: block;
+  font-size: 20px;
+  color: blue;
+  width: fit-content;
+}
+
+#intro,
+#develop {
+  background-color: brown;
+  color: #fff;
+  font-size: 30px;
+}
+
+#intro h2,
+#develop h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+#intro b,
+#develop b {
+  color: #333;
+}
+
+#intro img,
+#develop img {
+  width: 600px;
+}
+
+#menu h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 60%;
+  margin: auto;
+}
+
+tr {
+  height: 60px;
+}

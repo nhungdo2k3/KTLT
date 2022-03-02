@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "Reporting under authority",
+      "type": "textfield",
+      "id": "Field_1n8c3vl",
+      "key": "thamquyen",
+      "description": "Head Office/Business Unit",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0z2kh24"
+}

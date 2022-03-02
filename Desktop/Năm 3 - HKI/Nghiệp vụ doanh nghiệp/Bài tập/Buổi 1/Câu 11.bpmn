@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0oszw9a" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.9.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.15.0">
+  <bpmn:process id="Process_0rqhs2t" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="Thức dậy">
+      <bpmn:outgoing>Flow_0ntin9r</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Activity_0m90xda" name="Tập thể dục">
+      <bpmn:incoming>Flow_0ntin9r</bpmn:incoming>
+      <bpmn:outgoing>Flow_0kid9wj</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0ntin9r" sourceRef="StartEvent_1" targetRef="Activity_0m90xda" />
+    <bpmn:task id="Activity_0d153o7" name="Khoá cửa">
+      <bpmn:incoming>Flow_0963kwe</bpmn:incoming>
+      <bpmn:outgoing>Flow_0fr50qk</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="Event_0105hm0" name="Đi làm">
+      <bpmn:incoming>Flow_0fr50qk</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0fr50qk" sourceRef="Activity_0d153o7" targetRef="Event_0105hm0" />
+    <bpmn:adHocSubProcess id="Activity_109r3vt">
+      <bpmn:incoming>Flow_0kid9wj</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ob3ofu</bpmn:outgoing>
+      <bpmn:task id="Activity_1l3wovm" name="Kiểm tra vòi nước" />
+      <bpmn:task id="Activity_0kor4ky" name="Kiểm tra đèn" />
+      <bpmn:task id="Activity_0ncvvls" name="Kiểm tra gas" />
+      <bpmn:task id="Activity_1rqj26y" name="Kiểm tra điều hoà" />
+    </bpmn:adHocSubProcess>
+    <bpmn:adHocSubProcess id="Activity_0b09fng">
+      <bpmn:incoming>Flow_0ob3ofu</bpmn:incoming>
+      <bpmn:outgoing>Flow_0963kwe</bpmn:outgoing>
+      <bpmn:task id="Activity_0zr4hef" name="Cầm chìa khoá nhà" />
+      <bpmn:task id="Activity_0u8ah6w" name="Cầm chìa khoá xe" />
+    </bpmn:adHocSubProcess>
+    <bpmn:sequenceFlow id="Flow_0kid9wj" sourceRef="Activity_0m90xda" targetRef="Activity_109r3vt" />
+    <bpmn:sequenceFlow id="Flow_0ob3ofu" sourceRef="Activity_109r3vt" targetRef="Activity_0b09fng" />
+    <bpmn:sequenceFlow id="Flow_0963kwe" sourceRef="Activity_0b09fng" targetRef="Activity_0d153o7" />
+    <bpmn:textAnnotation id="TextAnnotation_1ntlykj">
+      <bpmn:text>6h sáng</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_19gz3sl" sourceRef="StartEvent_1" targetRef="TextAnnotation_1ntlykj" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_0rqhs2t">
+      <bpmndi:BPMNEdge id="Flow_0fr50qk_di" bpmnElement="Flow_0fr50qk">
+        <di:waypoint x="1360" y="297" />
+        <di:waypoint x="1472" y="297" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ntin9r_di" bpmnElement="Flow_0ntin9r">
+        <di:waypoint x="215" y="297" />
+        <di:waypoint x="330" y="297" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0kid9wj_di" bpmnElement="Flow_0kid9wj">
+        <di:waypoint x="430" y="297" />
+        <di:waypoint x="520" y="297" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ob3ofu_di" bpmnElement="Flow_0ob3ofu">
+        <di:waypoint x="780" y="310" />
+        <di:waypoint x="870" y="310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0963kwe_di" bpmnElement="Flow_0963kwe">
+        <di:waypoint x="1110" y="297" />
+        <di:waypoint x="1260" y="297" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="279" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="174" y="322" width="47" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0m90xda_di" bpmnElement="Activity_0m90xda">
+        <dc:Bounds x="330" y="257" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0d153o7_di" bpmnElement="Activity_0d153o7">
+        <dc:Bounds x="1260" y="257" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0105hm0_di" bpmnElement="Event_0105hm0">
+        <dc:Bounds x="1472" y="279" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1474" y="322" width="32" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1ntlykj_di" bpmnElement="TextAnnotation_1ntlykj">
+        <dc:Bounds x="220" y="220" width="100" height="30" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_19gz3sl_di" bpmnElement="Association_19gz3sl">
+        <di:waypoint x="211" y="285" />
+        <di:waypoint x="252" y="250" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Activity_13hwvgt_di" bpmnElement="Activity_109r3vt" isExpanded="true">
+        <dc:Bounds x="520" y="90" width="260" height="440" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1l3wovm_di" bpmnElement="Activity_1l3wovm">
+        <dc:Bounds x="600" y="210" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0kor4ky_di" bpmnElement="Activity_0kor4ky">
+        <dc:Bounds x="600" y="310" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ncvvls_di" bpmnElement="Activity_0ncvvls">
+        <dc:Bounds x="600" y="110" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1rqj26y_di" bpmnElement="Activity_1rqj26y">
+        <dc:Bounds x="600" y="410" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1e277qn_di" bpmnElement="Activity_0b09fng" isExpanded="true">
+        <dc:Bounds x="870" y="200" width="240" height="220" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0zr4hef_di" bpmnElement="Activity_0zr4hef">
+        <dc:Bounds x="940" y="220" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0u8ah6w_di" bpmnElement="Activity_0u8ah6w">
+        <dc:Bounds x="940" y="310" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

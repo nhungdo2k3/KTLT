@@ -1,0 +1,21 @@
+.expense-filter {
+    display: flex;
+    align-items: center;
+}
+
+.expense-filter h3 {
+    color: #fff;
+}
+
+.expense-filter select {
+    margin-left: auto;
+    width: 130px;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+

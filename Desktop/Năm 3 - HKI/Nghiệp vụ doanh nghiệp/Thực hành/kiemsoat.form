@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "Evaluate report?",
+      "type": "textfield",
+      "id": "Field_06j8hx9",
+      "key": "evaluate_report",
+      "description": "Yes/No",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_04brreq"
+}

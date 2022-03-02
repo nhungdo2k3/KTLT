@@ -1,0 +1,15 @@
+.btn-1 {
+  border: none;
+  padding: 20px 40px;
+  background-color: orange;
+  color: #fff;
+  border-radius: 5px;
+}
+.btn-2 {
+  @extend .btn-1;
+  background-color: pink;
+}
+.btn-3 {
+  @extend .btn-2;
+  color: red;
+}

@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+    /* Header */
+    .header {
+        height: var(--height-header-with-search);
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__nav-list {
+        display: none;
+    }
+    .header__with-search__form-field input {
+        width: 70%;
+    }
+    .header__with-search__form-field__label {
+        display: inline-block;
+    }
+    .history-search {
+        left: 95px;
+        width: 75%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 720px) {}
+
+@media (max-width: 720) {}

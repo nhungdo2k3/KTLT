@@ -1,0 +1,12 @@
+.product {
+  padding: 100px 0;
+  &__container {
+    .product__title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 70px;
+      text-align: center;
+      color: $black-color;
+    }
+  }
+}

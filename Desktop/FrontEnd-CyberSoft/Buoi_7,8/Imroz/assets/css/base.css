@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #fd4665;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none !important;
+}
+
+.btn-transparent,
+.btn-main {
+  text-transform: uppercase;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  letter-spacing: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50px;
+  transition: 0.2s linear;
+}
+
+.btn-transparent {
+  border-color: #817974;
+  background-color: transparent;
+}
+
+.btn-transparent:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.btn-main {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.btn-main:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
